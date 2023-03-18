@@ -1,0 +1,50 @@
+<%- include('../adminlayout/header.ejs') %>
+    <%- include('../adminlayout/navbar.ejs') %>
+
+        <div class="container-fluid pt-4 px-4">
+            <a href="/admin/category">
+                <button class="btn btn-primary">Add category</button>
+            </a>
+            <% if (alertMessage) { %>
+                <div class="alert alert-success" role="alert">
+                  <%= alertMessage %>
+                </div>
+              <% } %>
+            <div class="row g-4">
+                <div class="col-12">
+                    <div class="bg-light rounded h-100 p-4">
+                        <h6 class="mb-4">Responsive Table</h6>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No </th>
+                                        <th scope="col">Category</th>
+                                        <th scope="col">No of products</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% category.forEach((element,index)=> { %>
+                                        <tr>
+                                            <td>
+                                                <%= index+1 %>
+                                            </td>
+
+                                            <td>
+                                                <%= element.category %>
+                                            </td>
+                                            <td>
+                                                <%= element.products %>
+                                            </td>
+                                        </tr>
+                                        <% }) %>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Table End -->
+
+        <%- include('../adminlayout/footer.ejs') %>

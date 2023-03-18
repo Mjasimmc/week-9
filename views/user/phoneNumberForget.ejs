@@ -1,0 +1,36 @@
+<%- include('../layout/header.ejs') %>
+    <%- include('../layout/before-login.ejs') %>
+
+        <head>
+            <link rel="stylesheet" href="\stylesheets\signIn.css">
+        </head>
+        <!--================Login Box Area =================-->
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+                <form class="p-t-15" method="post" action="">
+                    <h4>Enter Your Email and Number</h4>
+                   
+                    <input type="text" id="login number" oninput="numbercheck()" class="fadeIn second" name="email"
+                        placeholder="Enter email" required>
+                        <input type="text" id="login number" oninput="numbercheck()" class="fadeIn second" name="mobile"
+                        placeholder="Enter Mobile" required>
+
+                    <input type="submit" class="fadeIn fourth" value="Submit">
+                    <div id="formFooter">
+                        <a class="underlineHover" href="/login">Already have Account</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script>
+            let num = document.getElementById('number').value
+            function numbercheck() {
+                let newvalue = parseInt(document.getElementById('number').value)
+                if (newcalue == NaN) {
+                    document.getElementById('number').value = num
+                }
+
+            }
+        </script>
+
+        <%- include('../layout/footer.ejs') %>
