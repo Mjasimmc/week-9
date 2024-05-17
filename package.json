@@ -25,7 +25,7 @@
     "nocache": "^3.0.4",
     "nodemon": "^2.0.21",
     "paypal-rest-sdk": "^1.8.1",
-    "razorpay": "^2.8.6",
+    "razorpay": "^2.9.4",
     "twilio": "^4.8.0",
     "xmlhttprequest": "^1.8.0"
   }
