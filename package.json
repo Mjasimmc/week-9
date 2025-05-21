@@ -21,7 +21,7 @@
     "jquery": "^3.6.4",
     "mailgun": "^0.5.0",
     "mongoose": "^7.0.1",
-    "multer": "^1.4.5-lts.1",
+    "multer": "^2.0.0",
     "nocache": "^3.0.4",
     "nodemon": "^2.0.21",
     "paypal-rest-sdk": "^1.8.1",
